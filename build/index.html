@@ -47,7 +47,7 @@
             </div>
         </nav>
     </header>
-
+<!------------------Hero Section-------------->
     <div class="hero">
         
         <div class="overlay bg-gradient-to-r from-bluegrad-100 to-bluegrad-200"></div>
@@ -105,7 +105,56 @@
     </div>
     </div>
 
+<!------------------About Section-------------->
+    <div id="about">
+        <div class="about__container  bg-black justify-center relative p-6">
+            <h1 class="subtitle text-9xl flex justify-start pt-6 border-b-4 border-blue-500 border-solid w-2/3"> Nice to Meet You! </h1>
+                    <p class="paragraph__text break normal w-1/2 justify-around pt-12 text-center text-gray-400"> I'm a highly motivated software developper looking to challenge and
+                        increase my current abilities.
+                        I'm a second year computer science student at Carleton University.
+                        My passion is writing, viewing and debugging new software and learning new technologies.</p>
+            <div class="row flex flex-row justify-around m-10">
+                <div class="about1__col basis-2/5">
+                    <img class="h-3/4" src="/images/about_img/Paul.jpg">
+                </div>
+                <div class="about2__col basis-2/5">
+                    
 
+                    <div class="tab__titles flex space-x-24 text-3xl mb-10">
+                        <p class="tab__links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab__links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab__links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab__contents block" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Web Site/Application Design</li>
+                            <li><span>Software Engineering</span><br>Creating Computer Programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab__contents hidden" id="certifications">
+                        <ul>
+                            <li><span>Coming Soon...</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab__contents hidden" id="education">
+                        <ul>
+                            <li><span>Highschool</span><br>Honor Roll| French immersion </li>
+                            <li><span>Post-Secondary</span><br>Carleton University| Computer Science Major| Second Year
+                            </li>
+                            <li><span>Self Taught</span><br>Harvard CS50 Web Develpoment|Adavnced Python Course|
+                                Algorithms + Data Structures </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 
     
 </body>
