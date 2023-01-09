@@ -13,12 +13,12 @@
 
 <body class="font-mono text-blue-100 ">
     <script href="app.js"></script>
-
-    <header class="">
+<!------- nav bar -------->
+    <header>
         
         <nav class="navbar flex justify-between w-full max-h-20 bg-black fixed z-10">
 
-            <a class="flex space-r-60" href="index.html" id="navbar__logo"><img class="w-auto h-auto" src="/nav_img/logo.PNG" alt="PaulTheProgrammer"></a>
+            <a class="flex space-r-60" href="index.html" id="navbar__logo"><img class="w-auto h-auto" src="/images/nav_img/logo.PNG" alt="PaulTheProgrammer"></a>
             
             <span class="navbar__container flex p-7">
 
@@ -44,12 +44,69 @@
                     <a href="#contact" class="navbar__links" id="contactpage"> Contact</a>
                 </li>
             </ul>
-    
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        
+        <div class="overlay bg-gradient-to-r from-bluegrad-100 to-bluegrad-200"></div>
+        <div class="hero__container grid justify-center items-center pt-40 bg-no-repeat bg-cover bg-fixed h-full w-full"
+             style="background-image: url('/images/backgrounds/background.jpg');
+                    height: 100vh;
+                    width: 100%;
+                    ;">
+            
+
+            <div class="hero__text items-center justify-center p-22">
+            <h1 class="hero__heading text-9xl relative">
+                Hello! I'm <br> <span style="background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;" class="hero__highlight text-9xl h-14 bg-gradient-to-r from-bluegrad-100 to-bluegrad-200 justify-center"> Paul </span>
+            </h1>
+        </div>
+            <div class="hero__description pt-6 text-xl ">
+                Computer Science Student | Software Engineer | Full Stack Developer
             </div>
 
-        </nav>
 
-    </header>
+            <div class="socials pt-6 py-60">
+                <ul class="flex justify-center pt-12 pb-6 space-x-20">
+
+                    <li class="h-20 w-20" id="Instagram"> <a href="https://www.instagram.com/paultheprogrammer/" target="_blank">
+                            <img src="/images/socials/iconmonstr-instagram-15-240 (1).png" >
+                        </a>
+                    </li>
+
+                    <li class="h-20 w-20" id="Linkedin">
+                        <a href="https://www.linkedin.com/in/paul-madut-94b360220/?trk=public_profile_browsemap&originalSubdomain=ca"
+                            target="_blank">
+                            <img src="/images/socials/iconmonstr-linkedin-5-240 (1).png" >
+                        </a>
+                    </li>
+
+                    <li  class="h-20 w-20"id="Mail">
+                        <a href="mailto:paulmadut@paultheprogrammer.ca" target="_blank">
+                            <img src="/images/socials/iconmonstr-email-11-240 (1).png" >
+                        </a>
+                    </li>
+
+                    <li class="h-20 w-20" id="Github">
+                        <a href="https://github.com/paul-madut" target="_blank">
+                            <img src="/images/socials/iconmonstr-github-5-240 (1).png" >
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+    </div>
+    </div>
+
+
+
     
 </body>
 </html>
