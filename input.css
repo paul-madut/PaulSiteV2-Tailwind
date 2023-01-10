@@ -5,3 +5,11 @@
 .navbar__item:hover {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-bluegrad-100 to-bluegrad-200
 }
+
+.inactive__tab{
+    @apply hidden;
+}
+
+.active__link{
+    @apply border-2 border-black border-b-sky-500 ;
+}
