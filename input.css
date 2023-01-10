@@ -13,3 +13,17 @@
 .active__link{
     @apply border-2 border-black border-b-sky-500 ;
 }
+
+.service__card{
+    @apply flex w-1/4 bg-neutral-800 flex-col items-center ease-out duration-300;
+}
+
+
+.service__card:hover{
+    @apply bg-gradient-to-tr from-bluegrad-100 to-bluegrad-200 -translate-y-4 ease-in duration-300;
+
+}
+
+.btn{
+    @apply bg-gray-600 text-blue-500 rounded-full py-2 px-3  font-bold cursor-pointer tracking-wider;
+}
