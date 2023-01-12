@@ -59,12 +59,12 @@
             
 
             <div class="hero__text items-center justify-center p-22">
-            <h1 class="hero__heading text-9xl relative">
+            <h1 class="hero__heading text-8xl relative">
                 Hello! I'm <br> <span style="background-size: 100%;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                -moz-text-fill-color: transparent;" class="hero__highlight text-9xl h-14 bg-gradient-to-r from-bluegrad-100 to-bluegrad-200 justify-center"> Paul </span>
+                -moz-text-fill-color: transparent;" class="hero__highlight text-8xl h-14 bg-gradient-to-r from-bluegrad-100 to-bluegrad-200 justify-center"> Paul </span>
             </h1>
         </div>
             <div class="hero__description pt-6 text-xl ">
@@ -156,10 +156,10 @@
 
     </div>
 
-    <!----------- Services ---------------->
+<!----------- Services ---------------->
 
     <div id="services">
-        <div class="conatiner bg-neutral-900 p-6">
+        <div class="conatiner bg-neutral-900 bg-cover w-full p-6">
             <h1 class="subtitle text-8xl mb-10"> My Services </h1>
             <div class="services__list flex justify-around ">
 
@@ -174,7 +174,7 @@
                     <a class ="justify-end my-12 btn" href="#">Learn More</a>
                 </div>
 
-                <div class="service__card rounded-lg">
+                <div class="service__card rounded-lg inactive__tab">
                     <i class="py-10 fa-solid fa-mobile-screen-button text-6xl"></i>
                     <div class="text-4xl m-6 flex text-center">UI/UX</div><br>
                     <div class ="p-10 paragraph__text "> One of the most important things about a web application is how the user
@@ -185,7 +185,7 @@
                     <a class ="justify-end my-6 btn" href="#">Learn More</a>
                 </div>
 
-                <div class="service__card rounded-lg ">
+                <div class="service__card rounded-lg inactive__tab">
                     <i class="py-10 fa-brands fa-python text-6xl "></i>
                     <h2 class="text-4xl m-6 flex text-center">Software/Script Development</h2><br>
                     <p class="px-6  paragraph__text">Need help automating emails? Organizing files? Update excel sheets?
@@ -199,6 +199,294 @@
 
     </div>
 
+<!----------- Portfolio ---------------->
+
+<div id="portfolio">
+    <div class="conatiner">
+        <h1 class="subtitle text-9xl"> My Work </h1>
+        <div class="work__list ">
+
+            <div class="work ">
+                <img src="/images/portfolio_img/PaulSite.PNG" alt="Work Exp 1" class="">
+                <div class="layer ">
+                    <h3 class="">Portfolio Website</h3>
+                    <p class="">I made a website showcasing my abilities and projects.
+                        This website makes it easier for employers and future clients to see
+                        what I am capable of as well as contact me effortlessley.</p>
+                    <a target="_blank" href="https://github.com/paul-madut/PaulSiteV2"><i
+                            class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                </div>
+            </div>
+
+            <div class="work ">
+                <img src="/images/portfolio_img/break.jpg" alt="Work Exp 2" class="">
+                <div class="layer">
+                    <h3>Work Break Generator</h3>
+                    <p>As a supervisor at [REDACTED] it is my responsablity to document when my peers are supposed
+                        to go and return from their breaks. Scheduling these breaks by hand took a monotonous,
+                        painstaking 13 minutes
+                        each time so I automated the task.
+                    </p>
+                    <a target="_blank" href="https://github.com/paul-madut/Work-break-genrator"><i
+                            class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                </div>
+            </div>
+
+            <div class="work ">
+                <img src="/images/portfolio_img/comingsoon.jpg" alt="Work Exp 2" class="">
+                <div class="layer ">
+                    <h3>Coming Soon</h3>
+                    <p>Woah this is a big project. I need a little more time to work on it but, rest assured it is
+                        on the way!</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- <a class="btn">See More</a> --->
+
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container ">
+        <div class="row">
+            <div class="contact__left ">
+                <h1 class="subtitle text-9xl p-6">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>paulmadut@paultheprogrammer.ca</p>
+                <p><i class="fa-solid fa-phone"></i>613-981-4476</p>
+                <div class="socials w-1/3 justify-start">
+                    <ul class="flex justify-start pt-12 pb-6 space-x-20">
+
+                        <li class="h-20 w-20" id="Instagram"> <a href="https://www.instagram.com/paultheprogrammer/" target="_blank">
+                                <img src="/images/socials/iconmonstr-instagram-15-240 (1).png" >
+                            </a>
+                        </li>
+    
+                        <li class="h-20 w-20" id="Linkedin">
+                            <a href="https://www.linkedin.com/in/paul-madut-94b360220/?trk=public_profile_browsemap&originalSubdomain=ca"
+                                target="_blank">
+                                <img src="/images/socials/iconmonstr-linkedin-5-240 (1).png" >
+                            </a>
+                        </li>
+    
+                        <li  class="h-20 w-20"id="Mail">
+                            <a href="mailto:paulmadut@paultheprogrammer.ca" target="_blank">
+                                <img src="/images/socials/iconmonstr-email-11-240 (1).png" >
+                            </a>
+                        </li>
+    
+                        <li class="h-20 w-20" id="Github">
+                            <a href="https://github.com/paul-madut" target="_blank">
+                                <img src="/images/socials/iconmonstr-github-5-240 (1).png" >
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="contact__right ">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <br> 
+                    <button class="btn btn2" type="submit">Submit</button>
+                    <a class="btn btn2" download href="/Paul_MadutResume (1).pdf">Download CV</a>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by Paul Madut</p>
+    </div>
+</div>
+
+
+<script>
+    var typed = new Typed(".hero__highlight", {
+        strings: ["Paul", "Paul Madut", "Paul The <br> Programmer."],
+        typeSpeed: 150,
+        backSpeed: 190,
+        loop: false
+    })
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzki9QKvKXqSV3vpyK0ZDHyw-baSNMBMPYjtt7SjIxYV-SxlihhmbpgJreOyc0BXmRq2w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = ("Message was sent successfully!")
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => {
+                msg.innerHTML = ("Message was not sent successfully!")
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset()
+            })
+    })
+</script>
+
+<style>
+#contact{
+  background: #000851;
+  background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-image: url("/images/backgrounds/background2.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+    
+
+.contact__left{
+  flex-basis: 35%;
+}
+
+.contact__right{
+  flex-basis: 60%;
+}
+
+.contact__left p {
+  margin-top: 10px;
+}
+
+.contact__left p i {
+  color: #3a47d5;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+
+.contact__right form{
+  width: 100%;
+
+}
+
+form input, form textarea{
+  width: 90%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 12px;
+
+}
+
+
+
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+#msg{
+  color: green;
+  margin-top: -10px;
+  display: block;
+}
+
+#portfolio{
+  padding: 50px;
+  background: #000000;
+}
+
+.work__list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0,0,0,0.6),blue);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3{
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 52px;
+  text-decoration: double;
+}
+
+.layer a {
+  color: white;
+  text-decoration: none;
+  font-size: 42px;
+  margin-top: 20px;
+  line-height: 60px;
+  background: fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.layer p{
+  color: white;
+}
+
+.work:hover img{
+  transform: scale(1.2);
+}
+
+.work:hover .layer{
+  height: 100%;
+}
+</style>
     
 </body>
 </html>

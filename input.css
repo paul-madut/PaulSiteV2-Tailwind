@@ -27,3 +27,4 @@
 .btn{
     @apply bg-gray-600 text-blue-500 rounded-full py-2 px-3  font-bold cursor-pointer tracking-wider;
 }
+
