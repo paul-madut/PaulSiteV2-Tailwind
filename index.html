@@ -134,13 +134,13 @@
                         </ul>
                     </div>
 
-                    <div class="tab__contents" id="certifications">
+                    <div class="tab__contents inactive__tab" id="certifications">
                         <ul>
                             <li><span>Microsoft AZ-900</span><br></li>
                         </ul>
                     </div>
 
-                    <div class="tab__contents" id="education">
+                    <div class="tab__contents inactive__tab" id="education">
                         <ul>
                             <li><span>Highschool</span><br>Honor Roll| French immersion </li>
                             <li><span>Post-Secondary</span><br>Carleton University| Computer Science Major| Second Year
@@ -159,9 +159,9 @@
 <!----------- Services ---------------->
 
     <div id="services">
-        <div class="conatiner bg-neutral-900 bg-cover w-full p-6">
+        <div class="conatiner bg-neutral-900 bg-cover w-full p-6 h-full">
             <h1 class="subtitle text-8xl mb-10"> My Services </h1>
-            <div class="services__list flex justify-around ">
+            <div class="services__list grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 px-8 ">
 
                 <div class="service__card rounded-lg">
                     <i class="py-10 fa-solid fa-desktop text-6xl "></i>
@@ -202,26 +202,28 @@
 <!----------- Portfolio ---------------->
 
 <div id="portfolio">
-    <div class="conatiner">
+    <div class="conatiner bg-black mx-auto h-screen">
         <h1 class="subtitle text-9xl"> My Work </h1>
-        <div class="work__list ">
+        <div class="work__list  grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 py-8 px-8 ">
 
-            <div class="work ">
-                <img src="/images/portfolio_img/PaulSite.PNG" alt="Work Exp 1" class="">
-                <div class="layer ">
-                    <h3 class="">Portfolio Website</h3>
-                    <p class="">I made a website showcasing my abilities and projects.
+            <div class="work relative rounded-xl overflow-hidden group mx-5 border-bluegrad-100 border-2">
+                <img src="/images/portfolio_img/PaulSite.PNG" alt="Work Exp 1" class="group-hover:blur-sm transition-all duration-200 ease-out">
+                <div class="layer inset-0 flex flex-col justify-end bg-black/60 opacity-0 scale-110 group-hover:scale-100 
+                group-hover:opacity-100 transition-all duration-200 ease-out absolute p-5">
+                    <h3 class="text-blue-700 font-bold text-6xl my-20 p-4">Portfolio Website</h3>
+                    <p class="text-white">I made a website showcasing my abilities and projects.
                         This website makes it easier for employers and future clients to see
                         what I am capable of as well as contact me effortlessley.</p>
-                    <a target="_blank" href="https://github.com/paul-madut/PaulSiteV2"><i
+                    <a target="blank" href="https://github.com/paul-madut/PaulSiteV2"><i
                             class="fa-solid fa-arrow-up-right-from-square "></i></a>
                 </div>
             </div>
 
-            <div class="work ">
-                <img src="/images/portfolio_img/break.jpg" alt="Work Exp 2" class="">
-                <div class="layer">
-                    <h3>Work Break Generator</h3>
+            <div class="work relative rounded-xl overflow-hidden group mx-5 border-bluegrad-100 border-2">
+                <img src="/images/portfolio_img/break.jpg" alt="Work Exp 2" class="group-hover:blur-sm transition-all duration-200 ease-out h-full">
+                <div class="layer layer inset-0 flex flex-col justify-end bg-black/60 opacity-0 scale-110 group-hover:scale-100 
+                group-hover:opacity-100 transition-all duration-200 ease-out absolute p-5">
+                    <h3 class="text-blue-700 font-bold text-6xl my-20 p-4">Work Break Generator</h3>
                     <p>As a supervisor at [REDACTED] it is my responsablity to document when my peers are supposed
                         to go and return from their breaks. Scheduling these breaks by hand took a monotonous,
                         painstaking 13 minutes
@@ -232,10 +234,11 @@
                 </div>
             </div>
 
-            <div class="work ">
-                <img src="/images/portfolio_img/comingsoon.jpg" alt="Work Exp 2" class="">
-                <div class="layer ">
-                    <h3>Coming Soon</h3>
+            <div class="work relative rounded-xl overflow-hidden group mx-5 border-bluegrad-100 border-2">
+                <img src="/images/portfolio_img/comingsoon.jpg" alt="Work Exp 2" class="group-hover:blur-sm transition-all duration-200 ease-out">
+                <div class="layer layer inset-0 flex flex-col justify-end bg-black/60 opacity-0 scale-110 group-hover:scale-100 
+                group-hover:opacity-100 transition-all duration-200 ease-out absolute p-5">
+                    <h3 class="text-blue-700 font-bold text-6xl my-20 p-4">Coming Soon</h3>
                     <p>Woah this is a big project. I need a little more time to work on it but, rest assured it is
                         on the way!</p>
                 </div>
@@ -405,86 +408,6 @@ form input, form textarea{
   color: green;
   margin-top: -10px;
   display: block;
-}
-
-#portfolio{
-  padding: 50px;
-  background: #000000;
-}
-
-.work__list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.work{
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.work img{
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.layer{
-  width: 100%;
-  height: 0%;
-  background: linear-gradient(rgba(0,0,0,0.6),blue);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
-}
-
-.layer h3{
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 52px;
-  text-decoration: double;
-}
-
-.layer a {
-  color: white;
-  text-decoration: none;
-  font-size: 42px;
-  margin-top: 20px;
-  line-height: 60px;
-  background: fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  justify-content: center;
-
-}
-
-.layer p{
-  color: white;
-}
-
-.work:hover img{
-  transform: scale(1.2);
-}
-
-.work:hover .layer{
-  height: 100%;
 }
 </style>
     
