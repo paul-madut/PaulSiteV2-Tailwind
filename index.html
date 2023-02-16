@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="max-w-[100%]">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,18 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
-<body class="font-mono text-blue-100 ">
+<body class="font-mono text-blue-100 overflow-x-hidden">
     <script href="app.js"></script>
 <!------- nav bar -------->
     <header>
         
-        <nav class="navbar flex justify-between w-full max-h-20 bg-black fixed z-10">
+        <div class="navbar flex justify-between w-full max-h-20 fixed z-10 border-b-2 bg-black  border-blue-600">
 
             <a class="flex space-r-60" href="index.html" id="navbar__logo"><img class="w-auto h-auto" src="/images/nav_img/logo.PNG" alt="PaulTheProgrammer"></a>
             
-            <span class="navbar__container flex p-7">
+            <div class="navbar__container w-screen p-7">
 
-                <ul class="flex space-x-6 text-2xl " >
+                <ul class=" md:flex space-x-6 text-2xl " >
 
                 <li class="navbar__item">
                     <a href="#header" class="navbar__links" id="homepage"> Home </a>
@@ -45,10 +45,10 @@
                 </li>
             </ul>
             </div>
-        </nav>
+        </div>
     </header>
 <!------------------Hero Section-------------->
-    <div class="hero">
+    <div class="hero w-screen min-h-screen overflow-hidden">
         
         <div class="overlay bg-gradient-to-r from-bluegrad-100 to-bluegrad-200"></div>
         <div class="hero__container grid justify-center items-center pt-40 bg-no-repeat bg-cover bg-fixed h-full w-full"

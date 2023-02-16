@@ -17,3 +17,18 @@ function opentab(tabName){
     document.getElementById(tabName).classList.remove("inactive__tab")
     
 }
+
+const toggleMenu = () =>{
+
+    let navList = document.getElementById('nav__list');
+    let menuIcon = document.getElementById('menu__icon');
+    let closeIcon = document.getElementById('close__icon');
+
+    menuIcon.classList.toggle('invisible')
+    closeIcon.classList.toggle('invisible')
+
+    navList.classList.toggle('hidden')
+}
+
+const menu = document.getElementsByClassName("menu")
+console.log(menu)
