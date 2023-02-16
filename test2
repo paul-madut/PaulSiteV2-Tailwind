@@ -1,0 +1,46 @@
+<div class="row flex md:flex-row justify-center md:justify-around m-10">
+            
+            <div class="about2__col md:basis-2/5">
+                
+                <h1 class="subtitle md:text-8xl text-5xl flex justify-center md:justify-start md:pt-6 border-b-4 border-blue-500 border-solid "> Nice to Meet You!  </h1>
+                        <p class="paragraph__text break normal w-4/6 mx-24 mb-14 justify-center md:w-full pt-12 text-center text-gray-400 mx-8"> I'm a highly motivated <strong class="text-blue-500">Software Developer</strong>  looking to challenge and
+                            increase my current abilities.
+                            I'm a second year computer science student at Carleton University.
+                            My passion is writing, viewing and debugging new software and learning new technologies.</p>
+
+                <div class="tab__titles flex space-x-24 text-3xl mb-10">
+                    <p class="tab__links active__link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab__links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab__links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab__contents active__tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>UI/UX</span><br>Web Site/Application Design</li>
+                        <li><span>Software Engineering</span><br>Creating Computer Programs</li>
+                    </ul>
+                </div>
+
+                <div class="tab__contents inactive__tab" id="certifications">
+                    <ul>
+                        <li><span>Microsoft AZ-900</span><br></li>
+                    </ul>
+                </div>
+
+                <div class="tab__contents inactive__tab" id="education">
+                    <ul>
+                        <li><span>Highschool</span><br>Honor Roll| French immersion </li>
+                        <li><span>Post-Secondary</span><br>Carleton University| Computer Science Major| Second Year
+                        </li>
+                        <li><span>Self Taught</span><br>Harvard CS50 Web Develpoment|Adavnced Python Course|
+                            Algorithms + Data Structures </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about1__col md:basis-2/5">
+                <img class="h-3/4" src="/images/about_img/Paul.jpg">
+            </div>
+
+        </div>

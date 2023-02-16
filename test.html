@@ -63,7 +63,7 @@
 
 
 
-<div class="hero bg-gray-400 w-screen min-h-screen">
+<div class="hero w-screen min-h-screen relative">
         
     <div class="overlay bg-gradient-to-r from-bluegrad-100 to-bluegrad-200"></div>
     <div class="hero__container grid justify-center items-center pt-40 bg-no-repeat bg-cover bg-fixed"
@@ -120,57 +120,61 @@
 </div>
 
 <!------------------About Section-------------->
-<div id="about">
-    <div class="about__container  bg-black justify-center relative p-6">
-        <div class="row flex md:flex-row justify-around m-10">
+<div id="about"class="about w-screen min-h-screen overflow-hidden">
+    <div class="about__container  bg-black justify-center relative pt-8">
+
+        <div class="row md:flex md:flex-row md:justify-around md:m-10">
+
+        <div class="about2__col md:basis-2/5">
+
             
-            <div class="about2__col basis-2/5">
-                
-                <h1 class="subtitle md:text-9xl text-6xl flex justify-start pt-6 border-b-4 border-blue-500 border-solid w-2/3"> How do you do?  </h1>
-                        <p class="paragraph__text break normal w-1/2 justify-around pt-12 text-center text-gray-400"> I'm a highly motivated <strong>Software Developer</strong>  looking to challenge and
-                            increase my current abilities.
-                            I'm a second year computer science student at Carleton University.
-                            My passion is writing, viewing and debugging new software and learning new technologies.</p>
-
-                <div class="tab__titles flex space-x-24 text-3xl mb-10">
-                    <p class="tab__links active__link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab__links" onclick="opentab('certifications')">Certifications</p>
-                    <p class="tab__links" onclick="opentab('education')">Education</p>
-                </div>
-
-                <div class="tab__contents active__tab" id="skills">
-                    <ul>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>UI/UX</span><br>Web Site/Application Design</li>
-                        <li><span>Software Engineering</span><br>Creating Computer Programs</li>
-                    </ul>
-                </div>
-
-                <div class="tab__contents inactive__tab" id="certifications">
-                    <ul>
-                        <li><span>Microsoft AZ-900</span><br></li>
-                    </ul>
-                </div>
-
-                <div class="tab__contents inactive__tab" id="education">
-                    <ul>
-                        <li><span>Highschool</span><br>Honor Roll| French immersion </li>
-                        <li><span>Post-Secondary</span><br>Carleton University| Computer Science Major| Second Year
-                        </li>
-                        <li><span>Self Taught</span><br>Harvard CS50 Web Develpoment|Adavnced Python Course|
-                            Algorithms + Data Structures </li>
-                    </ul>
-                </div>
+            <h1 class="subtitle md:text-8xl text-4xl flex justify-center md:justify-start md:pt-6 border-b-4 border-blue-500 border-solid "> Nice to Meet You!  </h1>
+            <div class="p__div w-screen">
+                <p class="paragraph__text normal p-2 mb-14 md:w-full pt-12 text-center text-gray-400 "> I'm a highly motivated <strong class="text-blue-500">Software Developer</strong>  looking to challenge and
+                        increase my current abilities.
+                        I'm a second year computer science student at Carleton University.
+                        My passion is writing, viewing and debugging new software and learning new technologies.</p>
             </div>
+                    
+                        <div class="tab__titles flex justify-evenly md:text-3xl mb-10 w-screen">
+                            <p class="tab__links active__link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab__links" onclick="opentab('certifications')">Certifications</p>
+                            <p class="tab__links" onclick="opentab('education')">Education</p>
+                        </div>
 
-            <div class="about1__col basis-2/5">
-                <img class="h-3/4" src="/images/about_img/Paul.jpg">
-            </div>
+                        <div class="tab__contents active__tab" id="skills">
+                            <ul class="text-center">
+                                <li class="py-3"><span class="text-xl text-blue-400">Web Development</span><br>Web App Development</li>
+                                <li class="py-3"><span class="text-xl text-blue-400">UI/UX</span><br>Web Site/Application Design</li>
+                                <li class="py-3"><span class="text-xl text-blue-400">Software Engineering</span><br>Creating Computer Programs</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab__contents inactive__tab" id="certifications">
+                            <ul class="text-center">
+                                <li class="py-3"><span class="text-xl text-blue-400">Cloud Certifications</span><br>Microsoft AZ-900</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab__contents inactive__tab" id="education">
+                            <ul class="text-center">
+                                <li class="py-3"><span class="text-xl text-blue-400">Highschool</span><br>Honor Roll<br> French immersion </li>
+                                <li class="py-3"><span class="text-xl text-blue-400">Post-Secondary</span><br>Carleton University<br> Computer Science Major <br> Second Year
+                                </li>
+                                <li class="py-3"><span class="text-xl text-blue-400">Self Taught</span><br>Harvard CS50 Web Develpoment<br> Adavnced Python Course <br>
+                                    Algorithms + Data Structures </li>
+                            </ul>
+                        </div>
+        </div>
+
+        <div class="about1__col md:basis-2/5">
+            <img class="h-3/4 mt-4" src="/images/about_img/Paul.jpg">
+        </div>
 
         </div>
     </div>
 
-
+    </div>
 </div>
 
 
